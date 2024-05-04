@@ -31,6 +31,7 @@ To install Docker Engine, you need the 64-bit version of one of these Ubuntu ver
 
 Docker Engine for Ubuntu is compatible with x86_64 (or amd64), armhf, arm64, s390x, and ppc64le (ppc64el) architectures.
 Uninstall old versions
+
 Before you can install Docker Engine, you need to uninstall any conflicting packages.
 Distro maintainers provide unofficial distributions of Docker packages in APT. You must uninstall these packages before you can install the official version of Docker Engine.
 The unofficial packages to uninstall are:
@@ -45,6 +46,7 @@ Moreover, Docker Engine depends on containerd and runc. Docker Engine bundles th
 Run the following command to uninstall all conflicting packages:
 $ for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 apt-get might report that you have none of these packages installed.
+
 Images, containers, volumes, and networks stored in /var/lib/docker/ aren't automatically removed when you uninstall Docker. If you want to start with a clean installation, and prefer to clean up any existing data, read the uninstall Docker Engine section.
 
 
@@ -246,5 +248,5 @@ service/netflix-service exposed
 
 # Browse with localhost IP with the port generated with NodePort
 
-http://<IP-Addresss>:32044 <Nodeport{port}>
+http://192.168.1.220<IP-Addresss>:32044 <Nodeport{port}>
 
