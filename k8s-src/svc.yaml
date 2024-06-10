@@ -3,16 +3,16 @@ kind: Service
 metadata:
   creationTimestamp: null
   labels:
-    app: 5g-ui-dashboard
-  name: 5g-ui-dashboard
+    app: aether-ui-dashboard
+  name: aether-ui-dashboard
 spec:
   ports:
-  - name: 5g-ui-dashboard
+  - name: aether-ui-dashboard
     port: 80
     protocol: TCP
     targetPort: 80
   selector:
-    run: 5g-ui-dashboard
+    run: aether-ui-dashboard
   type: NodePort
 status:
   loadBalancer: {}
