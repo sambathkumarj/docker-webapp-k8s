@@ -8,9 +8,9 @@ metadata:
 spec:
   ports:
   - name: aether-ui-dashboard
-    port: 80
+    port: 3003
     protocol: TCP
-    targetPort: 80
+    targetPort: 3003
   selector:
     run: aether-ui-dashboard
   type: NodePort
