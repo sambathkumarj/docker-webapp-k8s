@@ -3,15 +3,15 @@ kind: Pod
 metadata:
   creationTimestamp: null
   labels:
-    run: 5g-ui-dashboard
-  name: 5g-ui-dashboard
+    run: aether-ui-dashboard
+  name: aether-ui-dashboard
 spec:
   containers:
   - image: docker.io/udhaya21/uicontainer
-    name: 5g-ui-dashboard
+    name: aether-ui-dashboard
     resources: {}
   dnsPolicy: ClusterFirst
   imagePullSecrets:
-     - name: 5g-ui-dashboard
+     - name: aether-ui-dashboard
   restartPolicy: Always
 status: {}
